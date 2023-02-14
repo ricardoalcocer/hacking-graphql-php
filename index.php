@@ -1,10 +1,10 @@
 <?php
     use App\Models\Artist;
-use App\Models\Event;
-use App\Models\EventFormat;
-use App\Models\Host;
-use App\Models\Venue;
-use App\Models\VenuePhoto;
+    use App\Models\Event;
+    use App\Models\EventFormat;
+    use App\Models\Host;
+    use App\Models\Venue;
+    use App\Models\VenuePhoto;
 
     include "dbboot.php";
 
@@ -23,6 +23,6 @@ use App\Models\VenuePhoto;
     // $venue = Venue::all();
     // print_r(json_encode($venue->toArray()));
 
-    $venuephoto = VenuePhoto::all();
-    print_r(json_encode($venuephoto->toArray()));
+    // $venuephoto = VenuePhoto::all();
+    // print_r(json_encode($venuephoto->toArray()));
 
