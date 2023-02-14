@@ -1,21 +1,28 @@
 <?php
-    require('vendor/autoload.php');
-    use Illuminate\Database\Capsule\Manager as Capsule;
+    use App\Models\Artist;
+use App\Models\Event;
+use App\Models\EventFormat;
+use App\Models\Host;
+use App\Models\Venue;
+use App\Models\VenuePhoto;
 
-    $capsule = new Capsule;
+    include "dbboot.php";
 
-    $capsule->addConnection([
-        'driver'    => 'mysql',
-        'host'      => 'mysql.ricardoalcocer.com',
-        'database'  => 'graphqldemo',
-        'username'  => 'graphqldemo',
-        'password'  => 'GQLDemo!',
-        'charset'   => 'utf8',
-        'collation' => 'utf8_unicode_ci',
-        'prefix'    => '',
-    ]);
+    // $artist = Artist::all();
+    // print_r(json_encode($artist->toArray()));
 
-    $capsule->setAsGlobal();
-    $capsule->bootEloquent();
+    // $event = Event::all();
+    // print_r(json_encode($event->toArray()));
 
-    echo "DB Setup Done";
+    // $eventformat = EventFormat::all();
+    // print_r(json_encode($eventformat->toArray()));
+
+    // $host = Host::all();
+    // print_r(json_encode($host->toArray()));
+
+    // $venue = Venue::all();
+    // print_r(json_encode($venue->toArray()));
+
+    $venuephoto = VenuePhoto::all();
+    print_r(json_encode($venuephoto->toArray()));
+
