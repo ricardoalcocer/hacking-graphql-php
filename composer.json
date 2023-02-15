@@ -1,6 +1,7 @@
 {
     "require": {
-        "illuminate/database": "^10.0"
+        "illuminate/database": "^10.0",
+        "webonyx/graphql-php": "^15.1"
     },
     "autoload": {
         "psr-4": {
