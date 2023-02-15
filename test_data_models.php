@@ -31,3 +31,11 @@
 
     // $venue = Venue::with('host')->first();
     // print_r(json_encode($venue->toArray()));
+
+    // lazy
+    // $event = Event::first();
+    // print_r(json_encode($event->artist()->toArray()));
+
+    // eager
+    $event = Event::with('artist')->first();
+    print_r(json_encode($event->toArray()));
