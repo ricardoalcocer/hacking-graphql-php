@@ -6,4 +6,5 @@
     class Host extends Model{
         protected $table    = 'hosts';
         public $timestamps  = false;
+
     }    

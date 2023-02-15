@@ -17,11 +17,17 @@
     // $eventformat = EventFormat::all();
     // print_r(json_encode($eventformat->toArray()));
 
-    $host = Host::all();
-    print_r(json_encode($host->toArray()));
+    // $host = Host::all();
+    // print_r(json_encode($host->toArray()));
 
     // $venue = Venue::all();
     // print_r(json_encode($venue->toArray()));
 
     // $venuephoto = VenuePhoto::all();
     // print_r(json_encode($venuephoto->toArray()));
+
+    // $event = Event::with('artist')->with('host')->with('venue')->with('format')->first();
+    // print_r(json_encode($event->toArray()));
+
+    // $venue = Venue::with('host')->first();
+    // print_r(json_encode($venue->toArray()));

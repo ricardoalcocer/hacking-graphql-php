@@ -6,4 +6,5 @@
     class VenuePhoto extends Model{
         protected $table    = 'venues_photos';
         public $timestamps  = false;
+
     }    
