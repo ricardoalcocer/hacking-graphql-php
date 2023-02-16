@@ -6,7 +6,7 @@
     use GraphQL\GraphQL;
     use GraphQL\Type\Schema;
 
-    require('objecttypes.php');
+    require('object_types.php');
     require('queries.php');
 
     $schema = new Schema([
