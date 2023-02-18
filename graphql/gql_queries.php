@@ -1,5 +1,6 @@
 <?php
     use App\Models\Artist;
+    use App\Models\Event;
     use GraphQL\Type\Definition\ObjectType;
     use GraphQL\Type\Definition\Type;
 
@@ -27,6 +28,17 @@
                     $artists = Artist::all()->skip($args['skip'])->take($args['first'])->toArray();
                     return $artists;
                 }
-            ]
+            ],
+            'event'             => [
+                'type'          => $event_type,
+                'description'   => "Provides access and event by its id.",
+                'args'          => [
+                    'id'        => Type::int()
+                ],
+                'resolve'       => function($root,$args){
+                    $event = Event::find($args['id'])->toArray();
+                    return $event;
+                }
+            ],
         ]
     ]);

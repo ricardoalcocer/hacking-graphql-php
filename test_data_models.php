@@ -37,5 +37,5 @@
     // print_r(json_encode($event->artist()->toArray()));
 
     // eager
-    $event = Event::with('artist')->first();
-    print_r(json_encode($event->toArray()));
+    // $event = Event::with('artist')->first();
+    // print_r(json_encode($event->toArray()));
