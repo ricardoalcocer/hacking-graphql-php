@@ -6,8 +6,8 @@
     use GraphQL\GraphQL;
     use GraphQL\Type\Schema;
 
-    require('object_types.php');
-    require('queries.php');
+    require('gql_object_types.php');
+    require('gql_queries.php');
 
     $schema = new Schema([
         'query'     => $rootQuery,

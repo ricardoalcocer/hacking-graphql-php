@@ -3,7 +3,7 @@
     use GraphQL\Type\Definition\ObjectType;
     use GraphQL\Type\Definition\Type;
 
-    $artistType = new ObjectType([
+    $artist_type = new ObjectType([
             'name'                              => 'Artist',
             'description'                       => 'This is the Artist endpoint',
             'fields' => [

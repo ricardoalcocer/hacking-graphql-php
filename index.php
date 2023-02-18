@@ -1,3 +1,3 @@
 <?php
-    include "dbboot.php";
-    require('./graphql/main.php');
+    require("./dbboot.php");
+    require('./graphql/gql_main.php');
