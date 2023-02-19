@@ -1,8 +1,6 @@
 <?php
-
     use App\Models\Artist;
-use App\Models\Event;
-use App\Models\EventFormat;
+    use App\Models\EventFormat;
     use App\Models\Host;
     use App\Models\Venue;
     use App\Models\VenuePhoto;
