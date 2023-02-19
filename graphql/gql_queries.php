@@ -10,6 +10,7 @@
         'fields' => [
             'artist' => [
                 'type' => $artist_type,
+                'description' => 'Provides access to an artist by its id.',
                 'args' => [
                     'id' => Type::int(),
                 ],
@@ -20,6 +21,7 @@
             ],
             'artists' => [
                 'type' => Type::listOf($artist_type),
+                'description' => 'Provides access to a list of artists.',
                 'args' => [
                     'first'     => Type::int(),
                     'skip'      => Type::int()
