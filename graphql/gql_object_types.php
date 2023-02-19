@@ -106,6 +106,7 @@ use App\Models\EventFormat;
                     'resolve'   => function($root,$args){
                         $venueId   = $root['id'];
                         $photos    = VenuePhoto::all()->where('venue_id',$venueId);
+                        return $photos->toArray();
                     }
                 ]
             ];
