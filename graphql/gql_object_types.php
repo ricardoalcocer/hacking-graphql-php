@@ -110,7 +110,7 @@
             ];
         }
     ]);
-
+    
     $event_type = new ObjectType([
         'name'                                  => 'Event',
         'description'                           => 'This is the Event endpoint',
@@ -165,4 +165,22 @@
                 'max_attendees'                 => Type::string()
             ];
         }
+    ]);
+
+    $event_type_basic = new ObjectType([
+        'name'                                  => 'Event',
+        'description'                           => 'This is the Event endpoint',
+        'fields'   => [
+                'id'                            => Type::int(),
+                'guid'                          => Type::string(),
+                'host_id'                       => Type::int(),
+                'artist_id'                     => Type::int(),
+                'venue_id'                      => Type::int(),
+                'name'                          => Type::string(),
+                'description'                   => Type::string(),
+                'format_id'                     => Type::int(),
+                'start_at'                      => Type::string(),
+                'end_at'                        => Type::string(),
+                'max_attendees'                 => Type::string()
+            ]
     ]);
