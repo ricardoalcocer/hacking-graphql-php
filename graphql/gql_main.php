@@ -11,8 +11,8 @@
     ]);
 
     try{
-        $rawIn  = file_get_contents('php://input');
-        $in     = json_decode($rawIn, true);
+        $raw_in  = file_get_contents('php://input');
+        $in     = json_decode($raw_in, true);
         $query  = $in['query'];
         $result = GraphQL::executeQuery($schema, $query);
         $output = $result->toArray();
